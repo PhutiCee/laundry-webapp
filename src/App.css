@@ -1,38 +1,197 @@
-.App {
+body {
+  background-color: #fafafa;
+  //display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.box2 {
+  max-width: 50%;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/* styles.css */
+.hero-section {
+  background-image: url("../public/img/laundry.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #f8f9fa;
+  color: white;
+  padding: 4rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.service-selection {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.service-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.service-card-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* components/HowItWorks.css */
+/* .how-it-works {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.step {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: #2563eb;
+  color: #ffffff;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.step-description {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 576px) {
+  .step-number {
+    font-size: 1rem;
+  }
+} */
+/* HowItWorks.css */
+.how-it-works {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.step {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
   color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 60px;
+  margin: 0 auto 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* components/CustomerReviews.css */
+.customer-reviews {
+  text-align: center;
+  padding: 3rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.review-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.review-card .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-card .card-text {
+  font-size: 1rem;
+}
+
+/* components/ContactInformation.css */
+.contact-information {
+  text-align: center;
+  /* padding: 3rem 0; */
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  /* margin: 0.5rem 0; */
+  text-align: center;
+}
+/* components/Footer.css */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+.g-btn {
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 15px !important;
+}
+.g-btn > div,
+.g-btn > div > svg {
+  width: 40px !important;
+  height: 38px !important;
 }
